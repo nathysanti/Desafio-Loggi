@@ -27,7 +27,7 @@ let pedidos = [
     nPedido(20,034,311,555,874,001),
 ]
 
-for(const pedido of pedidos){
+for(let pedido of pedidos){
     if(pedido.destino > 500){
         console.log(invalido(pedido) + " Destino invalido");
     }
@@ -119,7 +119,7 @@ let origens = [
 console.log("");
 console.log("Regiões de origem de cada pedido: ");
 
-for(const _from of origens){
+for(let _from of origens){
     if(_from.origem > 500){
         console.log(_from.numero + " Destino invalido");
     }
@@ -220,11 +220,11 @@ function vendedor5(pedido){
 function vendedor6(pedido){
     return pedido.cVendedor == 845;
 }
-const pedidosVendedor1 = pedidos.filter(vendedor1);
-const pedidosVendedor2 = pedidos.filter(vendedor2);
-const pedidosVendedor3 = pedidos.filter(vendedor3);
-const pedidosVendedor5 = pedidos.filter(vendedor5);
-const pedidosVendedor6 = pedidos.filter(vendedor6);
+let pedidosVendedor1 = pedidos.filter(vendedor1);
+let pedidosVendedor2 = pedidos.filter(vendedor2);
+let pedidosVendedor3 = pedidos.filter(vendedor3);
+let pedidosVendedor5 = pedidos.filter(vendedor5);
+let pedidosVendedor6 = pedidos.filter(vendedor6);
 
 console.log("");
 console.log("Pedidos filtrados por vendedor");
