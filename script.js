@@ -1,3 +1,5 @@
+// 1 -  Identificar a região de destino de cada pacote, com totalização de pacotes (soma região);
+
 function nPedido(numero,origem,destino,cLoggi,cVendedor,tProduto){
     return{ numero,origem, destino,cLoggi,cVendedor,tProduto}
 }
@@ -279,6 +281,8 @@ console.log(pedidosLivros);
 console.log("Pacotes por destino com joias:")
 var novoarrayJ = pedidosJoias.filter((item)=> item.numero !==11)
 console.log( novoarrayJ);
+
+console.log("Não processado");// Não entendi muito bem esse, deixei apenas o tipo, pois o filtro com destino está na outra questão.
 
 // 7 - Se o transporte dos pacotes para o Norte passa pela Região Centro-Oeste, quais são os pacotes que devem ser despachados no mesmo caminhão?
 
